@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1024">
+<link href="http://fonts.googleapis.com/css?family=Muli:300,400"
+	rel="stylesheet" type="text/css">
+<title>Wild Rocket</title>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css"
+	media="all">
+<link rel="stylesheet" type="text/css" href="css/normalize.css"
+	media="all">
+
+<link href="http://fonts.googleapis.com/css?family=Muli:300,400"
+	rel="stylesheet" type="text/css">
+<script src="js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="js/jquery.carouFredSel-6.0.4-packed.js"
+	type="text/javascript"></script>
+<script type="text/javascript">
+
+			
+			$(function() {
+				$('#carousel').carouFredSel({
+					width: '100%',
+					items: {
+						visible: 3,
+						start: -1
+					},
+					scroll: {
+						items: 1,
+						duration: 1000,
+						timeoutDuration: 3000
+					},
+					prev: '#prev',
+					next: '#next',
+					pagination: {
+						container: '#pager',
+						deviation: 1
+					}
+				});
+			});
+		</script>
+
+<script type="text/javascript" src="js/fademover.js"></script>
+<script>
+		var ag = window.navigator.userAgent.toLowerCase();
+		var av = window.navigator.appVersion.toLowerCase();
+		
+			if (!(av.indexOf('msie 8.') != -1)) {
+				if(!navigator.userAgent.match(/iPad/i)) {
+					$(function(){
+						$('body').fadeMover({
+							'outSpeed': 400,
+							'inSpeed': 400,
+							'inDelay': 200,
+							'effectType': 1
+						});
+					});
+				}
+			}
+		</script>
+</head>
+<body style="opacity: 1;">
+	<div id="wrapper">
+
+		<header id="headerTop">
+			<div class="navi_lang">
+				<p>
+					<a href="index.html">ENGLISH</a>
+					<a href="index.html">中文</a>
+					<a href="index.html">日本の</a>
+				</p>
+			</div>
+
+			<div class="headerTopInr clearfix">
+				<h1>
+					<img src="img/logo.jpg" width="236" height="52" alt="">
+				</h1>
+				<nav class="navi">
+					<ul>
+						<li>Home</li>
+						<li><a href="" id="about">About</a></li>
+						<li><a href="">Menu</a></li>
+						<li><a href="">Reservation</a></li>
+						<li><a href="">Access</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+		<div id="carousel"
+			style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: auto; margin: 0px; width: 11120px; height: 470px; z-index: auto;">
+			<img src="img/1.jpg" width="800" height="470"style="margin-right: 0px;"></img>
+			<img src="img/2.jpg"width="800" height="470" style="margin-right: 0px;"></img>
+			<img src="img/3.jpg" width="800" height="470" style="margin-right: 0px;"></img>
+			<img src="img/IMG_6291.jpg" width="800" height="470" style="margin-right: 0px;"></img>
+			<img src="img/IMG_6315.jpg"	width="800" height="470" style="margin-right: 0px;"></img>
+		</div>
+		<a href="index.html#" id="prev"
+			title="Show previous" class="" style="display: inline;"> </a> <a
+			href="index.html#" id="next"
+			title="Show next" class="" style="display: inline;"> </a>
+	</div>
+	<div id="pager" class="" style="display: block;">
+		<a href="index.html#"><span>1</span></a><a
+			href="index.html#" class="selected"><span>2</span></a><a
+			href="index.html#"><span>3</span></a><a
+			href="index.html#"><span>4</span></a><a
+			href="index.html#"><span>5</span></a><a
+			href="index.html#"><span>6</span></a>
+	</div>
+
+</body>
+</html>
